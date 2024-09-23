@@ -1,4 +1,4 @@
-name: GitHub Actions macos-latest
+name: GitHub Actions macos-latest-arm
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: 
   workflow_dispatch:

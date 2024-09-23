@@ -1,4 +1,4 @@
-name: GitHub Actions macos-13-xlarge
+name: GitHub Actions macos-13-arm
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: 
   workflow_dispatch:
