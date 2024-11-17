@@ -3,6 +3,8 @@ name: test-oidc
 on:
     workflow_dispatch:
 
+permissions:
+    id-token: write
 jobs:
   auth:
 
