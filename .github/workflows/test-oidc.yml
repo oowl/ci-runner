@@ -1,0 +1,20 @@
+name: test-oidc
+
+on:
+    workflow_dispatch:
+
+jobs:
+  auth:
+
+    # Add "id-token" with the intended permissions.
+    permissions:
+      contents: 'read'
+      id-token: 'write'
+
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+        with:
+          fetch-depth: 1
+      - name: Dump env
+        run: env
