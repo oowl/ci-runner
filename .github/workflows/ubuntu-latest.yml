@@ -2,6 +2,8 @@ name: GitHub Actions ubuntu-latest
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: 
   workflow_dispatch:
+permissions:
+    id-token: write
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
